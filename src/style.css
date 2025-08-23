@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-image: url("/src/img/lobby2-1.jpg");
+    background-size: cover;
+    color: beige;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #d0c2c2;*/
+    background-color: rgb(0, 0, 0, 0.7);
+    margin-bottom: 16px;
+    /*height: 3em;*/
+    padding: 1em;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.chef{
+    height: 160px;
+    width: auto;
+    opacity: 0.9;
+}
+
+.description p{
+    padding: 16px;
+}
+
+nav button{
+    font-size: 18px;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+button:hover, button:focus{
+    text-shadow: 0 0 1px currentColor;
+}
+
+/*button */.active{
+    text-shadow: 0 0 1px currentColor;
+    border-bottom: solid white;
+}
