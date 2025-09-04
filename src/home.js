@@ -1,7 +1,7 @@
 import chefPlatting from "./img/chef_platting.jpg";
 
 const description=document.createElement("div");
-description.className="description";
+description.className="textContent";
 
 const platting=document.createElement("img");
 platting.className="chef";
