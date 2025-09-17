@@ -3,6 +3,7 @@ body{
     /*background-image: url("/src/img/lobby2-1.jpg");*/
     background-image: linear-gradient(rgba(0,0,0,.2)), url("/src/img/lobby2-1.jpg");
     background-size: cover;
+    background-attachment: fixed;
     color: beige;
 }
 
@@ -12,16 +13,19 @@ header{
     justify-content: center;
     align-items: center;
     /*background-color: #d0c2c2;*/
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 16px;
     /*height: 3em;*/
     padding: 1em;
+
+    position: sticky;
+    top: 0;
 }
 
 .textContent{
     display: flex;
     align-items: center;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .chef{
@@ -48,7 +52,54 @@ button:hover, button:focus{
     text-shadow: 0 0 1px currentColor;
 }
 
-/*button */.active{
+/*button*/.active{
     text-shadow: 0 0 1px currentColor;
     border-bottom: solid white;
+}
+
+.menuContainer{
+    overflow: auto;
+}
+
+.menuContainer .textContent{
+    padding: 16px;
+}
+
+.menuElements{
+    padding: 0 6em 6em 6em;
+}
+
+.dishContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.dishContainer .textContent{
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dishCategory{
+    align-self: center;
+}
+
+.dish{
+    display: flex;
+    align-items: center;
+    /*flex: 50%;*/
+    flex: 1 1 50%;
+}
+
+.dish.vegan h4::after{
+    content: "Vegan";
+    margin-left: 8px;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+.dishImage{
+    height: 150px;
+    width: auto;
+    margin: 2px 8px 2px 8px;
 }

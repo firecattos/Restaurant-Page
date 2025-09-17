@@ -2,6 +2,7 @@
 
 import "./style.css";
 import {homepage} from "./home.js";
+import {menuPage} from "./menu.js";
 
 const content=document.getElementById("content");
 
@@ -25,6 +26,7 @@ home.addEventListener("click", (e)=>{
 const menu=document.getElementById("menu");
 menu.addEventListener("click", (e)=>{
     initializeContent(e);
+    content.appendChild(menuPage);
 });
 
 const contacts=document.getElementById("contacts");
@@ -32,6 +34,6 @@ contacts.addEventListener("click", (e)=>{
     initializeContent(e);
 });
 
-//first page load
+
 home.classList.add("active");
 content.appendChild(homepage);
