@@ -3,6 +3,7 @@
 import "./style.css";
 import {homepage} from "./home.js";
 import {menuPage} from "./menu.js";
+import {contactsPage} from "./contacts.js"
 
 const content=document.getElementById("content");
 
@@ -32,8 +33,8 @@ menu.addEventListener("click", (e)=>{
 const contacts=document.getElementById("contacts");
 contacts.addEventListener("click", (e)=>{
     initializeContent(e);
+    content.appendChild(contactsPage);
 });
-
 
 home.classList.add("active");
 content.appendChild(homepage);

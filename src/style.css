@@ -1,7 +1,7 @@
 body{
     margin: 0;
     /*background-image: url("/src/img/lobby2-1.jpg");*/
-    background-image: linear-gradient(rgba(0,0,0,.2)), url("/src/img/lobby2-1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.2)), url("/src/img/lobby.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: beige;
@@ -102,4 +102,44 @@ button:hover, button:focus{
     height: 150px;
     width: auto;
     margin: 2px 8px 2px 8px;
+}
+
+.contactsContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.contactsContainer .textContent{
+    padding: 1em;
+}
+
+.contacts, .address, .map>iframe{
+    border-radius: 6px;
+}
+
+
+.contacts, .address{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  border-left: 4px solid #00bcd4;
+  margin-bottom: 1em;
+}
+
+.contacts>p{
+    margin: 0;
+}
+
+.phone{
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.address{
+  font-style: italic;
+}
+
+.map>iframe{
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
