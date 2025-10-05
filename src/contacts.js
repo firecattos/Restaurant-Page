@@ -7,7 +7,7 @@ contactsDiv.className="contactsDiv";
 
 const contactsFragment=document.createDocumentFragment();
 const numbersHeader=document.createElement("p");
-numbersHeader.textContent="For any inquiry that may come to mind, feel free to reach out and call us!";
+numbersHeader.textContent="For any inquiry that may come to mind, feel free to reach out";
 contactsFragment.appendChild(numbersHeader);
 
 const phonesContainer=document.createElement("div");

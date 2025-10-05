@@ -1,10 +1,14 @@
 body{
     margin: 0;
-    /*background-image: url("/src/img/lobby2-1.jpg");*/
     background-image: linear-gradient(rgba(0,0,0,.2)), url("/src/img/lobby.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: beige;
+}
+
+.nameHeader{
+    font-style: italic;
+    letter-spacing: 2px;
 }
 
 header{
@@ -12,14 +16,15 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-color: #d0c2c2;*/
     background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 16px;
-    /*height: 3em;*/
     padding: 1em;
-
     position: sticky;
     top: 0;
+}
+
+br{
+    margin-bottom: 10px;
 }
 
 .textContent{
@@ -32,6 +37,7 @@ header{
     height: 160px;
     width: auto;
     opacity: 0.9;
+    margin-right: 8px;
 }
 
 .description p{
@@ -52,7 +58,7 @@ button:hover, button:focus{
     text-shadow: 0 0 1px currentColor;
 }
 
-/*button*/.active{
+.active{
     text-shadow: 0 0 1px currentColor;
     border-bottom: solid white;
 }
@@ -86,7 +92,6 @@ button:hover, button:focus{
 .dish{
     display: flex;
     align-items: center;
-    /*flex: 50%;*/
     flex: 1 1 50%;
 }
 
@@ -117,7 +122,6 @@ button:hover, button:focus{
     border-radius: 6px;
 }
 
-
 .contacts, .address{
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1em;
@@ -136,6 +140,10 @@ button:hover, button:focus{
 
 .address{
   font-style: italic;
+}
+
+.address br{
+    margin: 0;
 }
 
 .map>iframe{

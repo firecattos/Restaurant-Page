@@ -1,5 +1,3 @@
-//console.log("webpack test");
-
 import "./style.css";
 import {homepage} from "./home.js";
 import {menuPage} from "./menu.js";
